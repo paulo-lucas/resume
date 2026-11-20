@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Paulo Cerqueira · Tech Lead · Currículo</title>
+<meta name="author" content="Paulo Cerqueira">
+<link rel="stylesheet" href="cv.css">
+</head>
+<body>
+
+<header>
+  <h1>Paulo Cerqueira</h1>
+  <p class="headline">Tech Lead · Construo produtos de ponta a ponta e lidero os times que os entregam.</p>
+  <p class="contact">
+    <span>Vila Velha · Brasil</span>
+    <span><a href="mailto:contact@paulolucas.dev">contact@paulolucas.dev</a></span>
+    <span><a href="https://paulolucas.dev">paulolucas.dev</a></span>
+    <span><a href="https://www.linkedin.com/in/plucas-cer">linkedin.com/in/plucas-cer</a></span>
+    <span><a href="https://github.com/paulo-lucas">github.com/paulo-lucas</a></span>
+  </p>
+</header>
+
+<section>
+  <h2>Resumo</h2>
+  <p class="summary">Tech Lead com mais de 6 anos entregando produtos mobile, web e backend, de uma fintech canadense e um dos maiores bancos do Brasil até a operação de varejo. Hoje lidero um time de 4 engenheiros numa rede de supermercados com mais de 20 lojas, colocando de pé a base de engenharia (CI/CD, ambiente local, documentação de API) enquanto construímos o produto.</p>
+</section>
+
+<section>
+  <h2>Experiência</h2>
+
+  <div class="job">
+    <div class="job-head"><h3>Tech Lead <span class="org">· Grupo Carone</span></h3><span class="when">out/2026 – atual</span></div>
+    <p class="context">Rede de supermercados com mais de 20 lojas e mais de 5.000 funcionários. App de gestão da operação em Flutter e serviços em Node.js e Go integrados ao ERP TOTVS Consinco. Vila Velha, híbrido.</p>
+    <ul>
+      <li>Lidero um time de 4 engenheiros, que vai crescer para 6, e participo da seleção e das entrevistas das novas vagas.</li>
+      <li>Criei pipelines de CI/CD com rollback automático: o deploy deixou de ser manual e de levar vários minutos e passou a ~1&nbsp;min nas APIs Node.js e ~30&nbsp;s nas APIs Go.</li>
+      <li>Dockerizei a stack para o time rodar tudo localmente, sem instalar o client da Oracle: o setup de um dev novo caiu de dias para menos de 1&nbsp;hora.</li>
+      <li>Documentei a API inteira e unifiquei uma collection compartilhada no Insomnia, com autenticação JWT automatizada.</li>
+      <li>Lidero um módulo de monitoramento de lojas no app de operação: dashboards, alertas e histórico compactado de sensores de refrigeração e das lojas, sobre um pipeline de IoT (MQTT → Redpanda → ClickHouse). Mapeio centenas de variáveis brutas dos controladores Carel BOSS, padrão do mercado, para um modelo de dados limpo.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><h3>Senior Software Engineer <span class="org">· Questrade</span></h3><span class="when">ago/2024 – out/2026</span></div>
+    <p class="context">Corretora online canadense. Time de Onboarding: abertura de conta, KYC e fluxos regulatórios na web (Angular) e no mobile (React Native), em trabalho remoto com times no Canadá e na Ucrânia.</p>
+    <ul>
+      <li>Liderei a migração do onboarding mobile para uma library própria: mais de 15 telas e cerca de 10 tipos de conta canadenses (TFSA, RRSP, Spousal e outros), estável em ~3&nbsp;meses. O time passou a ter autonomia total sobre o onboarding mobile, com fixes semanais, sem depender da capacidade de outro time.</li>
+      <li>Subi a cobertura de testes de 20% para 70%: refatorei o core, toda feature nova saía com 100% de cobertura e as sprints com folga iam para o código legado.</li>
+      <li>Implementei telemetria ponta a ponta e feature flags para rollout gradual (Amplitude); os funis mostravam onde os clientes desistiam e guiaram as mudanças por trás de uma melhora de mais de 50% na conversão de contas abertas em dois anos.</li>
+      <li>Construí sozinho, do zero, o front-end do novo backoffice de offer codes e affiliate codes, substituindo parte de uma ferramenta desktop legada que só rodava no Windows: abrir a ferramenta passou de minutos (uma VM para quem usava Mac ou Linux) para segundos (web, login com Azure AD).</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><h3>Software Engineer <span class="org">· IBM</span></h3><span class="when">out/2022 – ago/2024</span></div>
+    <p class="context">Engenheiro de consultoria em projetos para o Bradesco (um dos maiores bancos da América do Sul) e para a Vale (mineração global).</p>
+    <ul>
+      <li>Bradesco: engenheiro pleno da plataforma de financiamento rural; construí o fluxo de contratação de serviços (React, React Native), resolvi mais de 30 problemas e instabilidades em produção e apoiei 2 devs júnior no dia a dia.</li>
+      <li>Vale: construí a plataforma de análise da demanda global de aço prevista por IA (React, Node.js, Azure Data Lake) e dashboards do histórico de vendas, produção e extração de matéria-prima (Python, Databricks).</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><h3>Front-end Engineer <span class="org">· Yooga</span></h3><span class="when">ago/2023 – mai/2024</span></div>
+    <p class="context">SaaS de gestão para restaurantes. PJ, em paralelo com a IBM.</p>
+    <ul>
+      <li>Refiz em React o backoffice de gestão de clientes, migrando do Angular: 10 a 15 telas densas, cobrindo mais de 6.000 restaurantes. A v1 saiu em 5 dias, seguida de melhorias com base no feedback dos usuários.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><h3>Software Engineer <span class="org">· Americanas</span></h3><span class="when">nov/2021 – out/2022</span></div>
+    <ul>
+      <li>Projetei e construí a plataforma que organiza milhões de produtos em categorias pensadas para o cliente, em um dos maiores e-commerces do Brasil (React).</li>
+      <li>Otimizei integrações entre sistemas internos com serviços em Go (Gin).</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><h3>Software Engineer <span class="org">· VilaApps</span></h3><span class="when">fev/2021 – nov/2021</span></div>
+    <ul>
+      <li>Construí o checkout e a plataforma de vendas para provedores de internet (React, Angular, React Native) e ajudei a construir um jornal online com milhares de leitores (Ruby on Rails, React Native).</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head"><h3>Antes <span class="org">· Estágios</span></h3><span class="when">fev/2020 – fev/2021</span></div>
+    <ul class="compact">
+      <li><strong>Carone Labs (Grupo Carone)</strong>, estágio em desenvolvimento, out/2020 – fev/2021: automatizei o pagamento de cashback das vendas pela API do PicPay (Node.js) e construí mais de 5 dashboards de vendas sobre o Oracle (QlikView, PL/SQL).</li>
+      <li><strong>Directy</strong>, estágio em desenvolvimento, fev/2020 – out/2020: era todo o TI de uma empresa de 6 pessoas, construindo apps e APIs para a Mosaic; APIs em Node.js integradas ao Power BI substituíram mais de 50 planilhas de Excel.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Projetos</h2>
+  <div class="job">
+    <div class="job-head"><h3>Chapter <span class="org">· App de leitura social para iOS, Android e web</span></h3><span class="when">Projeto pessoal</span></div>
+    <ul>
+      <li>Construído sozinho em um mês, numa stack serverless (Expo, Supabase: Postgres, RLS, Realtime, Auth, Edge Functions): clubes do livro, feed em tempo real, motor de badges, push, remote config, backoffice, Sentry e telemetria própria. 27 idiomas traduzidos, 21 ADRs, testes de RLS com pgTAP. Beta fechado no Android em breve.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <div class="job-head"><h3>Maestria <span class="org">· Open source, Go</span></h3><span class="when">github.com/paulo-lucas/maestria</span></div>
+    <ul>
+      <li>Painel self-hosted para times de agentes de IA: um único binário em Go, 2FA com TOTP, releases assinadas (cosign), roda como serviço no macOS, Linux e Windows.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="skills">
+  <h2>Competências</h2>
+  <p><strong>Liderança</strong> Liderança técnica, seleção e entrevistas, mentoria, CI/CD e prática de engenharia, design e documentação de APIs, ADRs, testes automatizados</p>
+  <p><strong>Mobile</strong> Flutter, React Native, Expo</p>
+  <p><strong>Web</strong> React, TypeScript, Angular, Vue</p>
+  <p><strong>Backend</strong> Node.js, Go (Gin), Supabase, APIs REST, Ruby on Rails</p>
+  <p><strong>Dados e infra</strong> Docker, PostgreSQL, Oracle (PL/SQL), ClickHouse, Azure Data Lake, Databricks, Python, Amplitude, Sentry</p>
+</section>
+
+<section class="meta">
+  <h2>Formação e idiomas</h2>
+  <p><strong>Formação</strong> Bacharelado em Ciência da Computação, Universidade Vila Velha (UVV), previsão de conclusão em 2027</p>
+  <p><strong>Idiomas</strong> Português (nativo), inglês (profissional)</p>
+</section>
+
+</body>
+</html>
